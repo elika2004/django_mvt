@@ -54,7 +54,7 @@
         <ul>
           <li><a href={% url "root:home" %} class="active">Home</a></li>
           <li><a href={% url "root:about" %}> About</a></li>
-          <li><a href="services:services">Services</a></li>
+          <li><a href= "services:services">Services</a></li>
           <li><a href="properties:properties">Properties</a></li>
           <li><a href={% url "root:agents" %}>Agents</a></li>
           <li><a href={% url 'root:contact' %}>Contact</a></li>
@@ -70,6 +70,7 @@
                   <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
               </li>
+              <li><a href="contact.html">Login/Signup</a></li>
               <li><a href="#">Dropdown 2</a></li>
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
@@ -82,7 +83,9 @@
 
     </div>
   </header>
+{% block 'content' %}
 
+{% endblock 'content' %}
 
 
 

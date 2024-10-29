@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create
+def services(request):
+    return render(request, 'services/services.html', context=context)
